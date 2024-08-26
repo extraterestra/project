@@ -33,20 +33,17 @@ if __name__ == "__main__":
     # Assign grades
     sms.assign_grade("S12345", "C101", "A")
     sms.assign_grade("S67890", "C102", "B+")
-
-    # sms.get_students_in_course("C101")
-
-    # print("Students in 'Introduction to Python':")
-    # for student in sms.get_students_in_course("C101"):
-    #     print(student.name)
-
-
-
+  
 
     print(student1.name)
     print(instructor1.name)
     print(course1.course_name)
-    print(sms.enrollments)
-    print(sms.courses)
-    print(sms.students)
-    print(sms.get_students_in_course("C101"))
+
+    # print(sms.get_students_in_course("C101"))
+    print("Students in 'Introduction to Python':")
+    for student in sms.get_students_in_course("C101"):
+        print(student.name)
+
+    # Retrieve and print the list of courses the student is enrolled in
+    courses_for_student = sms.get_courses_for_student("S12345")
+    print(courses_for_student)  
