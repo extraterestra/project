@@ -5,4 +5,4 @@ class Instructor(Person):
         self.department = department
 
     def __str__(self):
-        return f"{super().__str__()}, ID Number: {self.employee_id}, Department: {self.department}"
+        return f"{super().__str__()}, ID Number: {self.id_number}, Department: {self.department}"
