@@ -5,6 +5,7 @@ from course import Course
 from enrollment import Enrollment
 
 class StudentManagementSystem:
+    """Class class StudentManagementSystem"""
     def __init__(self):
         self.students = {}
         self.instructors = {}
